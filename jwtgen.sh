@@ -23,4 +23,4 @@ if [ ! -f ./src/pem/ec-priv.pem ]; then
   openssl ec -in ./src/pem/ec-priv.pem -pubout -out ./src/pem/ec-pub.pem
 fi
 
-cargo run
+exec cargo run
